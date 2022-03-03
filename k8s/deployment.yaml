@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: newsd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: newsd
+  template:
+    metadata:
+      labels:
+        app: newsd
+    spec:
+      containers:
+      - image: okteto.dev/newsd:latest
+        name: newsd
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "mirror.umd.edu"
+        - name: Vless_UUID
+          value: "60be57d1-c698-483f-9ea5-073a4b530d3a"
+        - name: Vless_Path
+          value: "/vless"
+        - name: Vmess_UUID
+          value: "60be57d1-c698-483f-9ea5-073a4b530d3a"
+        - name: Vmess_Path
+          value: "/vmess"
+        - name: Share_Path
+          value: "/share129"
