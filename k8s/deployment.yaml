@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "microsoft.com"
+          value: "reuters.com"
         - name: Vless_UUID
           value: "60be57d1-c698-483f-9ea5-073a4b530d3a"
         - name: Vless_Path
