@@ -37,7 +37,7 @@
        "value": "latest"
      }
   },
-  "website": "",
-  "repository": "",
+  "website": "https://github.com/bookersw9/okgoodmoing.git",
+  "repository": "https://github.com/bookersw9/okgoodmoing.git",
   "stack": "container"
  }
