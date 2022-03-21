@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bandy2
+  name: newsd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bandy2
+      app: newsd
   template:
     metadata:
       labels:
-        app: bandy2
+        app: newsd
     spec:
       containers:
-      - image: okteto.dev/bandy2:latest
-        name: bandy2
+      - image: okteto.dev/newsd:latest
+        name: newsd
         ports:
         - containerPort: 8080
         env:
