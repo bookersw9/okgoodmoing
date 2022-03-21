@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: newsd
+  name: bandy2
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "newsd"
+  - name: "bandy2"
     port: 8080
   selector:
-    app: newsd
+    app: bandy2
